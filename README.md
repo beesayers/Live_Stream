@@ -30,14 +30,14 @@ Utilize RTSP protocol to send requests from client to server. Utilize RTP to tra
 
 #### Usage
 ---
-Client side - To run, python3 LaunchClient.py <IP address> <RTSP Port> <RTP Port>
+Client side - To run, '''python3 LaunchClient.py <IP address> <RTSP Port> <RTP Port>'''
 
-Server side - To run, python3 LaunchServer.py <RTSP Port>
+Server side - To run, '''python3 LaunchServer.py <RTSP Port>'''
 
 #### Protocols and Transport Headers
 ---
-RTSP - 	Client -> Server {command, RTSP seq num}
-
-	Server -> Client {RTSP seq num, Session ID}
-	
-RTP  - 	Server -> Client {fileType code, RTP seq num, timestamp, payload}
+###### RTSP
+- Client -> Server {command, RTSP seq num}
+- Server -> Client {RTSP seq num, Session ID}
+###### RTP
+- Server -> Client {fileType code, RTP seq num, timestamp, payload}
